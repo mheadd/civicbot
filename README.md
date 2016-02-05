@@ -2,7 +2,7 @@
 
 A Slackbot for interacting with your local government.
 
-[![CivicBot in action](https://www.youtube.com/watch?v=87aQkQmj2Fo)](https://www.youtube.com/watch?v=87aQkQmj2Fo)
+[![CivicBot in action](https://www.youtube.com/watch?v=87aQkQmj2Fo/0.jpg)](https://www.youtube.com/watch?v=87aQkQmj2Fo)
 
 CivicBot leverages the [wit.ai platform](https://wit.ai/docs) to support conversational interactions that provide useful information about a city. It's built with the awesome [Botkit library](https://github.com/howdyai/botkit) and it allows you to quickly and easily set up a bot in your Slack channel to get important or useful information when you need it.
 
@@ -27,9 +27,9 @@ After you have all the pieces sete up to run the app, invoke it thusly:
 ```
 ~$ slack_token={your-slack-token} wit_token={your-wit-token} npm start
 ```
-## Why Philadelphia
+## Why Philadelphia?
 
-I'm convinced that the [future of open data](http://civic.io/2015/11/06/thinking-small-on-civic-tech/) and civic technology involves building on top of small web services and APIs, and Philadelphia is a city that [has a lot of those](http://phlapi.com/). It's a big city with an active tech community and most likely has a healthy population of Slack users.
+I'm convinced that the [future of open data](http://civic.io/2015/11/06/thinking-small-on-civic-tech/) and civic technology involves building on top of small web services and APIs, and Philadelphia is a city that [has a lot of those](http://phlapi.com/). It's a big city with an active tech community and most likely has a healthy population of Slack users. Plus, Philly is awesome.
 
 That said, the work on this project could very be easily ported to another city. If you would like to do so, and want assistance, [come at me](https://github.com/mheadd).
 
