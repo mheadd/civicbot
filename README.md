@@ -16,7 +16,7 @@ Currently, in order to use CivicBot you'll need to set it up as a standalone app
 
 * Clone project repo and install dependencies: ```npm install```
 * Set up an account on [Wit.ai](https://wit.ai/). 
-* Create a new application and go to *Settings* and look in the section entitled *API Details* to get your ```Server Access Token```.
+* Create a new application and go to **Settings** and look in the section entitled **API Details** to get your *Server Access Token*.
 * You have the option of [creating new intents](https://wit.ai/docs/console/complete-guide#create-intents-link) for the actions already in the ```intents``` directory - and any new ones you add - or [copy existing](https://wit.ai/blog/2015/03/31/community-search) intents?
 * Create a new Slack app and connect CivicBot (the Botkit project has some nice [instructions here](https://github.com/howdyai/botkit#getting-started)).
 
