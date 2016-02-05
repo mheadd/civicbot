@@ -20,7 +20,7 @@ Currently, in order to use CivicBot you'll need to set it up as a standalone app
 * You have the option of [creating new intents](https://wit.ai/docs/console/complete-guide#create-intents-link) for the actions already in the ```intents``` directory - and any new ones you add - or [copy existing](https://wit.ai/blog/2015/03/31/community-search) intents?
 * Create a new Slack app and connect CivicBot (the Botkit project has some nice [instructions here](https://github.com/howdyai/botkit#getting-started)).
 
-Wit.ai intents map to file names in the ```intents``` directory. A user's input is sent to wit.ai and an intent (along with accompanying information) is returned to the app. The intent returned from the wit.ai platform determines which particular bit of functionality in the ```intents``` directory to invoke.
+Wit.ai intents map to file names in the ```[intents](tree/master/intents)``` directory. A user's input is sent to wit.ai and an intent (along with accompanying information) is returned to the app. The intent returned from the wit.ai platform determines which particular bit of functionality in the ```intents``` directory to invoke.
 
 After you have all the pieces sete up to run the app, invoke it thusly:
 
@@ -37,9 +37,9 @@ That said, the work on this project could very be easily ported to another city.
 
 Add new (or modify existing) functionality in the ```intents``` directory. The files in this directory are small (mostly) self contained Node scripts that represent a specific action  a user wants to take. The name of the file maps directly to the intents returned from the wit.ai platform. If you want to add or modify functions, do the following:
 
-* Create a new file for your action in the ```intents``` directory.
+* Create a new file for your action in the ```[intents](tree/master/intents)``` directory.
 * Add any new dependencies that your action needs to the ```package.json``` file (via ```npm install {module name} --save```).
 * Add any configuration elements to ```config.js``` file.
 * You can leverage existing utilities or add new ones to the ```utilities.js``` file. For example, ther eis an existing ```getJson``` utility that a number of existing actions leverage.
-* Declare your intent in the ```intents.js``` file.
+* Declare your new intent in the ```[intents.js](blob/master/intents/intents.js)``` file.
 * [Create](https://wit.ai/docs/console/complete-guide#create-intents-link) your action's corresponding intent on the wit.ai platform.
