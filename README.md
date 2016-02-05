@@ -39,7 +39,7 @@ Add new (or modify existing) functionality in the ```intents``` directory. The f
 
 * Create a new file for your action in the ```intents``` directory.
 * Add any new dependencies that your action needs to the ```package.json``` file (via ```npm install {module name} --save```).
-* Add any configuration elements to ```config.js``` file.
-* You can leverage existing utilities or add new ones to the ```utilities.js``` file. For example, ther eis an existing ```getJson``` utility that a number of existing actions leverage.
+* Add any configuration elements to [config.js](config/config.js) file.
+* You can leverage existing utilities or add new ones to the [utilities.js](utilities/utilities.js) file. For example, ther eis an existing ```getJson``` utility that a number of existing actions leverage.
 * Declare your new intent in the [intents.js](intents/intents.js) file.
 * [Create](https://wit.ai/docs/console/complete-guide#create-intents-link) your action's corresponding intent on the wit.ai platform.
