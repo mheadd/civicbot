@@ -22,14 +22,14 @@ Currently, in order to use CivicBot you'll need to set it up as a standalone app
 
 Wit.ai intents map to file names in the ```intents``` directory. A user's input is sent to wit.ai and an intent (along with accompanying information) is returned to the app. The intent returned from the wit.ai platform determines which particular bit of functionality in the ```intents``` directory to invoke.
 
-After you have all the pieces sete up to run the app, invoke it thusly:
+After you have all the pieces set up to run the app, invoke it thusly:
 
 ```
 ~$ slack_token={your-slack-token} wit_token={your-wit-token} npm start
 ```
 ## Why Philadelphia?
 
-I'm convinced that the [future of open data](http://civic.io/2015/11/06/thinking-small-on-civic-tech/) and civic technology involves building on top of small web services and APIs, and Philadelphia is a city that [has a lot of those](http://phlapi.com/). It's a big city with an active tech community and most likely has a healthy population of Slack users. Plus, Philly is awesome.
+I'm convinced that the [future of open data](http://civic.io/2015/11/06/thinking-small-on-civic-tech/) and civic technology involves building on top of small web services and APIs, and Philadelphia is a city that [has a lot of those](http://phlapi.com/). It's a big city with an active tech community and most likely has a healthy population of Slack users. Plus, Philly is just [awesome](http://www.phillygeekawards.com/).
 
 That said, the work on this project could very be easily ported to another city. If you would like to do so, and want assistance, [come at me](https://github.com/mheadd).
 
