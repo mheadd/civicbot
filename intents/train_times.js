@@ -3,7 +3,7 @@ var config = require('config');
 
 exports.respond = function(bot, message, response) {
 	if(!response.entities.location) {
-		bot.reply(message, 'You need to specify a station name like this: ```train times for {street address}```');
+		bot.reply(message, 'You need to specify a station name like this: ```train times for {station name}```');
 	}
 	else {
 		var station = convertStationName(response.entities.location[0].value);

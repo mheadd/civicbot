@@ -45,5 +45,8 @@ function buildResonse(bot, message, settings, error, response, body) {
 
 // Clean up text in descrition field.
 function cleanDescription(text) {
-	return utilities.toTitleCase(text.substring(0, text.indexOf('\n\n ')));
+	if(text) {
+		return utilities.toTitleCase(text.substring(0, text.indexOf('\n\n ')));
+	}
+	return 'No description.';
 }

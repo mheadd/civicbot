@@ -4,9 +4,8 @@ var request = require('request');
 var intents = require('intents');
 var config = require('config');
 
-var debug = process.env.debug || false;
-var controller = Botkit.slackbot({ debug: debug });
-var bot = controller.spawn({ token:process.env.slack_token }).startRTM();
+var controller = Botkit.slackbot({ debug: config.general.debug });
+var bot = controller.spawn({ token: config.general.slack_token }).startRTM();
 
 // User asks for help.
 controller.hears(['help'], config.general.metion_types, function(bot, message) {
@@ -17,7 +16,7 @@ controller.hears(['help'], config.general.metion_types, function(bot, message) {
 
 // All other text gets routed to Wit.AI to retireve appropriate intent.
 controller.hears(['(.*)'], config.general.metion_types, function(bot, message) {
-	wit.captureTextIntent(process.env.wit_token, message.text, function (err, res) {
+	wit.captureTextIntent(config.general.wit_token, message.text, function (err, res) {
 	    if (err) {
 	    	bot.reply(message, config.error.general_error_message);
 	    }

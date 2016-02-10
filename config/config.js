@@ -1,6 +1,7 @@
-var appname = process.env.appname || 'CivicBot';
-
 exports.general = {
+	wit_token: process.env.wit_token || null,
+	slack_token: process.env.slack_token || null,
+	debug: process.env.debug || false,
 	metion_types: 'direct_mention',
 	no_help: 'Sorry, help is not available at this time.',
 	confidence: 0.5
@@ -13,7 +14,7 @@ exports.error = {
 };
 
 exports.witApiOptions = {
-	  url: 'https://api.wit.ai/intents?v=' + appname,
+	  url: 'https://api.wit.ai/intents?v=' + process.env.appname,
 	  headers: { 'Authorization': 'Bearer ' +  process.env.wit_token }
 };
 
