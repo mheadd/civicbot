@@ -1,5 +1,5 @@
-var utilities = require('utilities');
-var config = require('config');
+var utilities = require('../utilities/utilities');
+var config = require('../config/config');
 
 exports.respond = function(bot, message, response) {
 	if(!response.entities.number) {

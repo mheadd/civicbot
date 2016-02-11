@@ -1,8 +1,8 @@
 var wit = require('node-wit');
-var Botkit = require('Botkit');
+var Botkit = require('botkit');
 var request = require('request');
-var intents = require('intents');
-var config = require('config');
+var intents = require('./intents/intents');
+var config = require('./config/config');
 
 var controller = Botkit.slackbot({ debug: config.general.debug });
 var bot = controller.spawn({ token: config.general.slack_token }).startRTM();

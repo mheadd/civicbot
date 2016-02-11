@@ -25,7 +25,7 @@ Wit.ai intents map to file names in the ```intents``` directory. A user's input 
 After you have all the pieces set up to run the app, invoke it thusly:
 
 ```
-~$ slack_token={your-slack-token} wit_token={your-wit-token} npm start
+~$ slack_token={your-slack-token} wit_token={your-wit-token} node index.js
 ```
 ## Why Philadelphia?
 
