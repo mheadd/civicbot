@@ -12,7 +12,7 @@ This project is still in its early days - modifications and enhancements are in 
 
 ## Usage
 
-Currently, in order to use CivicBot you'll need to set it up as a standalone app in your Slack channel. To get started, you can follow the steps here:
+Currently, in order to use CivicBot you'll need to set it up as a standalone app in your Slack channel (you can run CivicBot [inside a Docker container](docker) if you like). To get started, you can follow the steps here:
 
 * Clone project repo and install dependencies: ```npm install```
 * Set up an account on [Wit.ai](https://wit.ai/). 
