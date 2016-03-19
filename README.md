@@ -4,7 +4,7 @@ A Slackbot for interacting with your local government.
 
 [![CivicBot in action](http://img.youtube.com/vi/87aQkQmj2Fo/0.jpg)](https://www.youtube.com/watch?v=87aQkQmj2Fo)
 
-CivicBot leverages the [wit.ai platform](https://wit.ai/docs) to support conversational interactions that provide useful information about a city. It's built with the awesome [Botkit library](https://github.com/howdyai/botkit) and it allows you to quickly and easily set up a bot in your Slack channel to get important or useful information when you need it.
+CivicBot leverages the [wit.ai platform](https://wit.ai) to support conversational interactions that provide useful information about a city. It's built with the awesome [Botkit library](https://github.com/howdyai/botkit) and it allows you to quickly and easily set up a bot in your Slack channel to get important or useful information when you need it.
 
 CivicBot was built to provide information from the City of Philadelphia (more on this below), but it can be easily ported to any city that has an open data platform or publicly available APIs.
 
@@ -12,7 +12,7 @@ This project is still in its early days - modifications and enhancements are in 
 
 ## Usage
 
-Currently, in order to use CivicBot you'll need to set it up as a standalone app in your Slack channel. To get started, you can follow the steps here:
+Currently, in order to use CivicBot you'll need to set it up as a standalone app in your Slack channel (you can run CivicBot [inside a Docker container](docker) if you like). To get started, you can follow the steps here:
 
 * Clone project repo and install dependencies: ```npm install```
 * Set up an account on [Wit.ai](https://wit.ai/). 
