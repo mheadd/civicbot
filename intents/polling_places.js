@@ -15,6 +15,7 @@ exports.respond = function(bot, message, response) {
 // Settings for use in rendering user response.
 var settings = {};
 
+// Build the response to the user.
 function buildResonse(bot, message, settings, error, response, body) {
 	if(!error && response.statusCode == 200) {
 		var place = body.features[0].attributes;
@@ -29,3 +30,28 @@ function buildResonse(bot, message, settings, error, response, body) {
 		bot.reply(message, 'Sorry, I could not look up polling location for that address.');
 	}
 }
+
+// Look up the description for a building accessibility code.
+exports.buildingCodeLookup = function(code) {
+  return building[code];
+}
+
+// Look up the description for a parking code.
+exports.parkingCodeLookup = function(code) {
+  return parking[code];
+}
+
+var building = [];
+building['F'] = 'Building Fully Accessible';
+building['B'] = 'Building Substantially Accessible';
+building['M'] = 'Building Accessibilty Modified';
+building['A'] = 'Alternate Entrance';
+building['R'] = 'Building Accessible With Ramp';
+building['N'] = 'Building Not Accessible';
+
+var parking = [];
+parking['N'] = 'No Parking';
+parking['G'] = 'General Parking';
+parking['L'] = 'Loading Zone';
+parking['H'] = 'Handicap Parking';
+

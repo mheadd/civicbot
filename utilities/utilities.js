@@ -7,6 +7,7 @@ exports.getJson = function(bot, message, url, settings, callback) {
 	});
 }
 
+// Make an API call to an endpoint that accepts POSTs with payload.
 exports.postJson = function(bot, message, url, settings, payload, callback) {
   request({method: 'POST', url: url, json: payload}, function(error, response, body) {
     callback(bot, message, settings, error, response, body);
@@ -42,24 +43,3 @@ exports.formatTime = function (date) {
   return formattedTime;
 }
 
-exports.buildingCodeLookup = function(code) {
-  return building[code];
-}
-
-exports.parkingCodeLookup = function(code) {
-  return parking[code];
-}
-
-var building = [];
-building['F'] = 'Building Fully Accessible';
-building['B'] = 'Building Substantially Accessible';
-building['M'] = 'Building Accessibilty Modified';
-building['A'] = 'Alternate Entrance';
-building['R'] = 'Building Accessible With Ramp';
-building['N'] = 'Building Not Accessible';
-
-var parking = [];
-parking['N'] = 'No Parking';
-parking['G'] = 'General Parking';
-parking['L'] = 'Loading Zone';
-parking['H'] = 'Handicap Parking';
