@@ -21,7 +21,7 @@ function buildResonse(bot, message, settings, error, response, body) {
 		var flights = JSON.parse(body);
 		var user_response = '';
 		if(flights.length == 0) {
-			user_response += 'I could not find a record of flight number ' + flight_number + '.';
+			user_response += 'I could not find a record for that flight number.';
 		}
 		else {
 			for (var flight in flights) {
