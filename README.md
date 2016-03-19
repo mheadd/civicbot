@@ -1,8 +1,8 @@
 # CivicBot
 
-A Slackbot for interacting with your local government.
+A Slackbot for interacting with your local government. Full demo [here](https://www.youtube.com/watch?v=87aQkQmj2Fo).
 
-[![CivicBot in action](http://img.youtube.com/vi/87aQkQmj2Fo/0.jpg)](https://www.youtube.com/watch?v=87aQkQmj2Fo)
+![Looking up a polling location](# "Polling location lookup")
 
 CivicBot leverages the [wit.ai platform](https://wit.ai) to support conversational interactions that provide useful information about a city. It's built with the awesome [Botkit library](https://github.com/howdyai/botkit) and it allows you to quickly and easily set up a bot in your Slack channel to get important or useful information when you need it.
 
