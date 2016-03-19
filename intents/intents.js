@@ -5,6 +5,7 @@ var flight_info = require('./flight_info');
 var train_times = require('./train_times');
 var airport_parking = require('./airport_parking');
 var train_times = require('./train_times');
+var polling_places = require('./polling_places');
 
 module.exports = {
 	permits: permits,
@@ -13,5 +14,6 @@ module.exports = {
 	flight_info: flight_info,
 	train_times: train_times,
 	airport_parking: airport_parking,
-	train_times: train_times
+	train_times: train_times,
+	polling_places: polling_places
 };

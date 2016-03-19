@@ -23,5 +23,6 @@ exports.apis = {
 	parking_api_url: 'https://api.phila.gov/airport-parking/v1/',
 	parking_web_url: 'http://www.phl.org/passengerinfo/directionsparking/Pages/parkingGarages.aspx',
 	flightinfo_url: 'http://flightinfo.phlapi.com/number/',
-	service_request_url: 'http://api.phila.gov/open311/v2/requests/%id%.json'
+	service_request_url: 'http://api.phila.gov/open311/v2/requests/%id%.json',
+	polling_location_url: 'https://zfv58sa9nl.execute-api.us-east-1.amazonaws.com/prod/pollingPlaceLookup'
 }
