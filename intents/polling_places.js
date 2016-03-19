@@ -21,8 +21,8 @@ function buildResonse(bot, message, settings, error, response, body) {
 		var place = body.features[0].attributes;
 		bot.reply(message, 'Location: ' + place.location);
 		bot.reply(message, 'Address: ' + place.display_address);
-		bot.reply(message, 'Parking: ' + utilities.parkingCodeLookup(place.parking));
-		bot.reply(message, 'Accessibility: ' + utilities.buildingCodeLookup(place.building));
+		bot.reply(message, 'Parking: ' + parkingCodeLookup(place.parking));
+		bot.reply(message, 'Accessibility: ' + buildingCodeLookup(place.building));
 		bot.reply(message, 'Map: https://www.google.com/maps/place/' + encodeURIComponent(place.display_address + ', Philadelphia, PA'));
 
 	}
@@ -32,12 +32,12 @@ function buildResonse(bot, message, settings, error, response, body) {
 }
 
 // Look up the description for a building accessibility code.
-exports.buildingCodeLookup = function(code) {
+buildingCodeLookup = function(code) {
   return building[code];
 }
 
 // Look up the description for a parking code.
-exports.parkingCodeLookup = function(code) {
+parkingCodeLookup = function(code) {
   return parking[code];
 }
 
