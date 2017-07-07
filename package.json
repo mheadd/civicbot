@@ -10,5 +10,7 @@
     "phli": "0.0.9",
     "request": "^2.67.0"
   },
+  "repository": "https://github.com/mheadd/civicbot",
+  "license": "BSD-3-Clause",
   "author": "Mark Headd <mheadd@gmail.com> (http://civic.io/)"
 }
